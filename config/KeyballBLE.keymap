@@ -136,7 +136,7 @@
 &kp LC(Z)  &kp SPACE      &none      &kp L      &kp LC(SPACE)  &kp ENTER         &none  &kp Z                                          &none
             >;
 
-            sensor-bindings = <&inc_dec_kp BACKSLASH LBKT>;
+            sensor-bindings = <&inc_dec_kp RBKT LBKT>;
         };
     };
 };

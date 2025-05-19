@@ -22,6 +22,11 @@
             bindings = <&kp DOUBLE_QUOTES>;
             key-positions = <20 21>;
         };
+
+        line {
+            bindings = <&kp LA(ENTER)>;
+            key-positions = <40 41>;
+        };
     };
 
     macros {
@@ -60,8 +65,8 @@
             bindings = <
 &kp Q             &kp W         &kp E         &kp R                 &kp T                                                        &kp Y          &kp U  &lt 5 I    &kp O    &kp MINUS
 &kp A             &kp S         &kp D         &kp F                 &kp G        &mkp LCLK                    &kp LEFT_BRACKET   &kp H          &kp J  &kp K      &kp L    &kp P
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                 &kp B        &kp CAPS                     &kp RIGHT_BRACKET  &kp N          &kp M  &kp COMMA  &kp DOT  &kp RIGHT_SHIFT
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 6 TAB  &lt 3 SPACE  &lt_to_layer_0 2 DELETE      &kp ENTER          &kp BACKSPACE                             &kp DELETE
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                 &kp B        &kp CAPS                     &kp RIGHT_BRACKET  &kp N          &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT EXCL
+&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 6 TAB  &lt 3 SPACE  &lt_to_layer_0 2 DELETE      &kp ENTER          &kp BACKSPACE                             &kp SLASH
             >;
 
             sensor-bindings = <&ROTATE SCRL_DOWN SCRL_UP>;
@@ -131,7 +136,7 @@
 &kp LC(Z)  &kp SPACE      &none      &kp L      &kp LC(SPACE)  &kp ENTER         &none  &kp Z                                          &none
             >;
 
-            sensor-bindings = <&inc_dec_kp RIGHT_BRACKET LEFT_BRACKET>;
+            sensor-bindings = <&inc_dec_kp BACKSLASH LEFT_BRACKET>;
         };
     };
 };

@@ -25,7 +25,7 @@
 
         line {
             bindings = <&kp LA(ENTER)>;
-            key-positions = <40 41>;
+            key-positions = <40 39>;
         };
     };
 

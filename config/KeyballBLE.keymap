@@ -145,7 +145,7 @@
 &none      &none          &kp LC(H)  &none           &to 0                                      &none           &none            &none  &none  &none
 &none      &kp LC(SLASH)  &kp LC(D)  &kp E           &kp P             &none             &none  &none           &kp DELETE       &none  &none  &kp RBKT
 &kp LC(C)  &kp LC(V)      &kp T      &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT      &none  &kp LEFT_ARROW  &kp RIGHT_ARROW  &none  &none  &kp LBKT
-&kp LC(Z)  &kp SPACE      &kp K      &kp M           &kp LC(SPACE)     &kp SPACE         &none  &kp Z                                          &none
+&kp LC(Z)  &kp SPACE      &kp K      &kp M           &kp LC(SPACE)     &kp SPACE         &none  &kp Z                                          &to 0
             >;
 
             sensor-bindings = <&inc_dec_kp RIGHT_BRACKET BACKSLASH>;

@@ -27,6 +27,18 @@
             bindings = <&kp LA(ENTER)>;
             key-positions = <40 39>;
         };
+
+        mouse {
+            bindings = <&to 4>;
+            key-positions = <41 40>;
+            layers = <0>;
+        };
+
+        mouseR {
+            bindings = <&to 0>;
+            key-positions = <40 41>;
+            layers = <4>;
+        };
     };
 
     macros {
@@ -92,10 +104,10 @@
 
         ARROWandNUM {
             bindings = <
-&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                     &kp NUMBER_6    &kp N7          &kp N8           &kp N9  &kp N0
-&kp F1        &kp F2        &kp F3        &kp F4        &kp F5   &none      &none  &none           &kp UP_ARROW    &none            &none   &none
-&kp F6        &kp F7        &kp F8        &kp F9        &kp F10  &to 7      &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none   &none
-&kp F11       &kp F12       &none         &none         &none    &none      &none  &none                                                    &none
+&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                     &kp NUMBER_6      &kp N7          &kp N8           &kp N9  &kp N0
+&kp F1        &kp F2        &kp F3        &kp F4        &kp F5   &none      &none  &none             &kp UP_ARROW    &none            &none   &none
+&kp F6        &kp F7        &kp F8        &kp F9        &kp F10  &to 7      &none  &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT_ARROW  &none   &none
+&kp F11       &kp F12       &none         &none         &none    &none      &none  &kp LEFT_CONTROL                                           &none
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
@@ -130,10 +142,10 @@
 
         layer_7 {
             bindings = <
-&none      &none          &kp LC(H)  &none      &to 0                                   &none           &none            &none  &none  &none
-&none      &kp LC(SLASH)  &kp LC(D)  &kp V      &kp B          &none             &none  &none           &kp DELETE       &none  &none  &kp RBKT
-&none      &none          &kp I      &kp LC(W)  &kp LC(LA(F))  &kp LEFT_ALT      &none  &kp LEFT_ARROW  &kp RIGHT_ARROW  &none  &none  &kp LBKT
-&kp LC(Z)  &kp SPACE      &none      &kp L      &kp LC(SPACE)  &kp ENTER         &none  &kp Z                                          &none
+&none      &none          &kp LC(H)  &none           &to 0                                      &none           &none            &none  &none  &none
+&none      &kp LC(SLASH)  &kp LC(D)  &kp E           &kp P             &none             &none  &none           &kp DELETE       &none  &none  &kp RBKT
+&kp LC(C)  &kp LC(V)      &kp T      &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT      &none  &kp LEFT_ARROW  &kp RIGHT_ARROW  &none  &none  &kp LBKT
+&kp LC(Z)  &kp SPACE      &kp K      &kp M           &kp LC(SPACE)     &kp SPACE         &none  &kp Z                                          &none
             >;
 
             sensor-bindings = <&inc_dec_kp RIGHT_BRACKET BACKSLASH>;

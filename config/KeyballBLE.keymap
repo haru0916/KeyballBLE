@@ -27,18 +27,6 @@
             bindings = <&kp LA(ENTER)>;
             key-positions = <40 39>;
         };
-
-        mouse {
-            bindings = <&to 4>;
-            key-positions = <41 40>;
-            layers = <0>;
-        };
-
-        mouseR {
-            bindings = <&to 0>;
-            key-positions = <40 41>;
-            layers = <4>;
-        };
     };
 
     macros {
@@ -149,6 +137,15 @@
             >;
 
             sensor-bindings = <&inc_dec_kp RIGHT_BRACKET BACKSLASH>;
+        };
+
+        layer_8 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+            >;
         };
     };
 };
